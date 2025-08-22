@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <h2>Formulario GET www.itam.mx</h2>
+
+    <form 
+    method="get"
+    action="https://www.itam.mx/es/1/paginas/resultados"
+    target="_blank">
+        <label for="searchInput">Buscar en itam.mx:</label>
+        <input 
+        type="text"
+        id="searchInput"
+        name="#"
+        placeholder="Término de búsqueda"
+        required
+        >
+        <button type="submit">Buscar</button>
+    </form>
+
+    <form 
+    method="post"
+    action=""
+    autocomplete="off"
+    target="_blank"
+    
+    >
+    <fieldset>
+        <legend>Inicio de sesión</legend>
+        <label for="userNameInput">Correo electrónico</label>
+        <input type="email">
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Google y Yahoo</title>
+</head>
+<body>
+    <h1>Formulario Google y Yahoo</h1>
+    <h2>Realizar una búsqueda en Google</h2>
+    <form 
+    method="GET" 
+    action="https://www.google.com/search"
+    target="_blank"
+    role="search">
+        <label for="searchInput">Buscar en google.com</label>
+        <input 
+        type="text"
+        id="searchInput"
+        name="q"
+        placeholder="Búsqueda"
+        required>
+        <button type="submit">Buscar</button>
+    </form>
+    <h2>Formulario POST para inicio de sesión en Yahooo.com</h2>
+    <form 
+    method="post"
+    action="https://login.yahoo.com/?.lang=es-MX&src=homepage&.done=https%3A%2F%2Fespanol.yahoo.com%2F&pspid=2142990676&activity=ybar-signin"
+    autocomplete="off"
+    target="_blank"
+    novalidateonkeypress="if (event && event.keyCode == 13) Login.submitLoginRequest();"
+    >
+        <fieldset>
+            <legend>Inicio de sesión</legend>
+            <label for="emailInput">Correo electrónico</label>
+            <input 
+            type="email"
+            id="emailInput"
+            name="identifier"
+            placeholder="ejemplo@yahoo.com"
+            required>
+        </fieldset>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+</body>
+</html>
