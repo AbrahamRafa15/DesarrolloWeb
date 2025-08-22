@@ -3,35 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas</title>
+    <title>Tablero</title>
 </head>
 <body>
-    <div>
-        <img src="Imagenes/logo_itam.png" alt="logo_itam" width="100">
-        <p>Cuenta</p>
-        <p>Tablero</p>
-        <p>Cursos</p>
-        <p>Calendario</p>
-        <p>Bandeja de Entrada</p>
-        <p>Historial</p>
-        <p>Ayuda</p>
+    <div role="region">
+        <div>        
+            <img src="Imagenes/logo_itam.png" alt="logo_itam" width="100">
+        </div>
+        <ul id="menu">
+            <li>
+                <div aria-hidden="true">
+                    <img src="Imagenes/IMG_9226.jpg" alt="Abraham Martínez Cerón" width="30">
+                </div>
+                <div>Cuenta</div>
+            </li>
+            <li>
+                <div aria-hidden="true">
+                    <img src="Imagenes/gauge.open.with.lines.needle.33percent.svg" alt="Tablero" width="30">
+                </div>
+                <div>Tablero</div>
+            </li>
+            <li>
+                <div aria-hidden="true">
+                    <img src="Imagenes/text.book.closed.fill.svg" alt="Cursos" width="30">
+                </div>
+            </li>
+            <li>
+                <div aria-hidden="true">
+                    <img src="Imagenes/person.2.fill.svg" alt="Personas" width="30"> 
+                </div>
+                <div>Personas</div>
+            </li>
+            <li>
+                <div aria-hidden="true">
+                    <img src="Imagenes/calendar.svg" alt="Calendario" width="30">
+                </div>
+                <div>Calendario</div>
+            </li>
+            <li>
+                <div aria-hidden="true">
+                    <img src="Imagenes/tray.full.fill.svg" alt="Bandeja de entrada" width="30">
+                </div>
+                <div>Bandeja de entrada</div>
+            </li>
+            <li>
+                <div aria-hidden="true">
+                    <img src="Imagenes/clock.arrow.trianglehead.counterclockwise.rotate.90.svg" alt="Historial" width="30">
+                </div>
+                <div>Historial</div>
+            </li>
+            <li>
+                <div aria-hidden="true">
+                    <img src="Imagenes/questionmark.circle.svg" alt="Ayuda" width="30">
+                </div>
+                <div>Ayuda</div>
+        </ul>
     </div>
-    <div>
+    <div id="content" role="main">
+        <div id="dashboard">
         <h1>Tablero</h1>
-        <h2>Por hacer</h2>
-        <h2>Valoración reciente</h2>
-        <div>
-            <h3>INFERENCIA ESTADÍSTICA</h3>
-            <h3>INTRODUCCIÓN AL DESARROLLO WEB</h3>
-            <h3>ORGANIZACIÓN Y PROGRAMACIÓN DE COMPUTADORAS</h3>
+        <div id="Encabezado">
+            <div>
+                <span dir="ltr" direction="ror" wrap="no-wrap" >
+                    <span dir="ltr">
+                        <span dir="ltr">
+                            <span>Tablero</span>
+                        </span>
+                    </span>
+                </span>
+                <span dir="ltr">
+                    <span dir="ltr">
+                        <span dir="ltr">
+                            <span><img src="Imagenes/list.dash.svg" alt="lista" width="30"></span>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div id="DashboardCard_Container">
+            <div class="DashboardCard_Header">
+                <div class="DashbordCard_header_hero"></div>
+                <div class="DashboardCard_Header_content">
+                    <h3>INFERENCIA ESTADÍSTICA</h3>
+                </div>
+            </div>
+            <nav class="DashboardCard_action_container">
+
+            </nav>
+        </div>
+        <div id="DashboardCard_Container">
+            <div class="DashboardCard_Header">
+                <div class="DashbordCard_header_hero"></div>
+                <div class="DashboardCard_Header_content">
+                    <h3>INTRODUCCIÓN AL DESARROLLO WEB</h3>
+                </div>
+            </div>
+            <nav class="DashboardCard_action_container">
+
+            </nav>
+        </div>
+        <div id="DashboardCard_Container">
+            <div class="DashboardCard_Header">
+                <div class="DashbordCard_header_hero"></div>
+                <div class="DashboardCard_Header_content">
+                    <h3>ORGANIZACIÓN Y PROGRAMACIÓN DE COMPUTADORAS</h3>
+                </div>
+            </div>
+            <nav class="DashboardCard_action_container">
+
+            </nav>
+        </div>
+        </div>
+        <div id="right-side-wrapper">
+            <aside id="right-side" role="complementary" style="opacity: 1; display: block;">
+                <div class="Sidebar_TodoListContainer">
+                    <h2>
+                        <span tabindex="-1">Por hacer</span>
+                    </h2>
+                </div>
+                <div class="event_list">
+                    <div class="h2 shared-space">
+                        <h2>Valoración reciente</h2>
+                    </div>
+                </div>
+                <div>
+                    <p>Ver las calificaciones</p>
+                </div>
+            </aside>
         </div>
     </div>
-    <div>
-        <p><a href="https://itam.instructure.com/privacy_policy">Política de Privacidad</a></p>
-        <p><a href="https://www.instructure.com/policies/canvas-lms-cookie-notice">Aviso de cookie</a></p>
-        <p><a href="https://itam.instructure.com/#">Política de uso aceptable</a></p>
-        <p><a href="http://facebook.com/instructure">Facebook</a></p>
-        <p><a href="http://twitter.com/instructure">X.com</a></p>
-    </div>
+    <footer>
+        <a href="http://www.instructure.com"><img src="Imagenes/Instructure_Inc._Logo.png" alt="Instructure_Inc" width="100"></a>
+        <div id="footer-links">
+            <p><a href="https://itam.instructure.com/privacy_policy">Política de Privacidad</a></p>
+            <p><a href="https://www.instructure.com/policies/canvas-lms-cookie-notice">Aviso de cookie</a></p>
+            <p><a href="https://itam.instructure.com/#">Política de uso aceptable</a></p>
+            <p><a href="http://facebook.com/instructure">Facebook</a></p>
+            <p><a href="http://twitter.com/instructure">X.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>
