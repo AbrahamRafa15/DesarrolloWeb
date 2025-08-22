@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Google y Yahoo</title>
+    <title>Formulario Google e ITAM</title>
 </head>
 <body>
-    <h1>Formulario Google y Yahoo</h1>
+    <h1>Formulario Google e ITAM</h1>
     <h2>Realizar una búsqueda en Google</h2>
     <form 
     method="GET" 
@@ -22,25 +22,49 @@
         required>
         <button type="submit">Buscar</button>
     </form>
-    <h2>Formulario POST para inicio de sesión en Yahooo.com</h2>
+    <h2>Formulario POST para inicio de sesión en itam.instructure.com</h2>
     <form 
     method="post"
-    action="https://login.yahoo.com/?.lang=es-MX&src=homepage&.done=https%3A%2F%2Fespanol.yahoo.com%2F&pspid=2142990676&activity=ybar-signin"
+    action="https://sts.itam.mx/adfs/ls?SAMLRequest=fZLNTsMwEITvPEXke36V0mIlkUorRKUCVRs4cEGuvWktJXbwOlDeHicFUQ7tdT3fzs6uM2RN3dJpZ%2FdqDe8doPUOTa2QDg856YyimqFEqlgDSC2nm%2BnDkiZBRFujrea6JifIZYIhgrFSK%2BIt5jl5G99cV3E8Bh%2BgSvyUj4XPthXzUxaJSSK4qMSIeC9g0DE5cS0ciNjBQqFlyrpSlIz8aOInSRmndJTSOH0l3tzlkIrZgdpb2yINQ7QYSMuaoDmETFQY1ki86e9EM62wa8BswHxIDs%2Fr5R85UNJZmo7bzkDAdRPWeidV2Gcm3upnE7dSCal2l5ewPYqQ3pflyl89bUpSZH0fOkQzRW97zrXXJVl4Ks%2BON3x0Rov5SteSf3l32jTMnp8jDuKhIoVfDVLaKWyBy0qCcFupa%2F05M8As5MT5AwmLo%2Bn%2Fv1JcfQM%3D&SigAlg=http%3A%2F%2Fwww.w3.org%2F2000%2F09%2Fxmldsig%23rsa-sha1&Signature=AexuEOyqHMWeEWzIXp46p1KSODRLwikbE1aisaWnRgORzWalMw6h%2BKBKQ35GwCzp7dAjGL4PwwyfZNJF%2F0joY0374mU88ZHRRzd8vwFdyfZfen10zUCq1FmGJjNQps4n7u%2F6H%2FvsLnVoqhBcDD4xalDFozKxATOqxxnfJRjeonghfTujLJBh8vefa8gFzlPOI1O5G0nd%2FuDGtFkmXSC1U8KLcxq51KeZEQX4V3aO4v8NmlQzntOklgvDh1Tu4tRsgO2M2L0zeBkxdG1eQIUfbHKl2A7q28vOI2qXSDoSPMwES2aIRgCLakGAwF5iGm3Ge1hUzGFv2TO73RIsoe1iyg%3D%3D"
     autocomplete="off"
     target="_blank"
     novalidateonkeypress="if (event && event.keyCode == 13) Login.submitLoginRequest();"
     >
         <fieldset>
             <legend>Inicio de sesión</legend>
-            <label for="emailInput">Correo electrónico</label>
+            <label for="userNameInput">Correo electrónico</label>
             <input 
             type="email"
             id="emailInput"
-            name="identifier"
-            placeholder="ejemplo@yahoo.com"
+            name="userName"
+            placeholder="ejemplo@itam.mx"
             required>
+
+            <label for="passwordInput">Contraseña</label>
+            <input type="password"
+            id="passwordInput"
+            name="password"
+            placeholder="Contraseña"
+            autocomplete="false">
+
+            <div id="kmsiArea" style="display: none">
+            <input
+            type="checkbox"
+            name="Kmsi"
+            id="kmsiInput"
+            value="true"
+            />
+            <label for="kmsiInput">Mantener la sesión iniciada</label>
+            </div>
+
         </fieldset>
-        <button type="submit">Iniciar sesión</button>
+        <button type="submit" id="submitButton">Iniciar sesión</button>
+        <input
+            type="hidden"
+            name="AuthMethod"
+            value="FormsAuthentication"
+            id="optionForms"
+        />
     </form>
 </body>
 </html>
