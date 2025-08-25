@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación</title>
+</head>
+<body>
+    <h1>Tarea Investigación Múltiple</h1>
+
+    <h2>Diferencias entre etiquetas</h2>
+
+    <p><b>Solamente es para poner en negritas</b></p>
+    <p><strong>El navegador interpreta strong como algo a lo que se debe hacer énfasis. 
+        Es muy útil para lectores de pantalla, ya que les indica que deben poner énfasis en esa palabra o frase.
+    </strong></p>
+    <p><i>El texto se lee en otro tono o para taxonomías, términos técnicos, frases de otros idiomas, pensamientos,
+        transcripciones, nombres de naves espaciales, etc.
+    </i></p>
+    <p><em>Implica énfasis dependiendo del contexto, la palabra que se pone en itálica se interpreta de manera diferente
+    </em></p>
+    <p><s>La etiqueta s tacha el texto y se interpreta como que el contenido ya no es relevante,
+        válido o correcto. No implica que el texto se haya eliminado.
+    </s></p>
+    <p><del>La etiqueta del implica que el texto es contenido eliminado y se podía interpretar como cambio en 
+        alguna versión, contratos o comparaciones.
+    </del></p>
+
+    <h2>Elementos de bloque y de línea</h2>
+    <p>Los elementos de bloque son aquellos que ocupan todo el ancho de la página HTML y se agrupan, como su nombre indica,
+        en bloques. Algunos ejemplos son: div, h1 a h6, p, ul, ol, table, header, footer, section, article, entre otros.
+    </p>
+    <h3>Ejemplos:</h3>
+    <p>Esto es un párrafo</p>
+    <h4>Esto es un título h4</h4>
+    <ul>
+        <li>Elemento de lista 1</li>
+        <li>Elemento de lista 2</li>
+        <li>Elemento de lista 3</li>
+    </ul>
+    <ol>
+        <li>Elemento de lista ordenada 1</li>
+        <li>Elemento de lista ordenada 2</li>
+        <li>Elemento de lista ordenada 3</li>
+    </ol>
+    <section>Esto es una sección</section>
+    <p>En cambio, los elementos de línea son aquellos que ocupan sólo el ancho de su contenido, por ejemplo: a, b, i, img o span</p>
+    <h3 id="Ejemplos">Ejemplos:</h3>
+    <a href="#Ejemplos">Esto es un vínculo</a>
+    <b>Esto es un texto en negritas</b>
+    <i>Esto es un texto en itálicas</i>
+    <span>Esto es un span</span>
+    <img src="Imagenes/logo_itam.png" alt="logo_itam" width="50"> Esto es una imagen
+
+    <h2 id="Formulario">Formulario</h2>
+    <form action="#Formulario">
+        <input type="button" name="miBoton" id="miBoton" value="Botón">
+        <input type="checkbox" name="miCheckbox" id="miCheckbox"> Checkbox<br>
+        <input type="color" name="miColor" id="miColor"><br>
+        <input type="date" name="miFecha" id="miFecha"><br>
+        <input type="datetime-local" name="miFechaLocal" id="miFechaLocal"><br>
+        <input type="email" name="miEmail" id="miEmail" placeholder="Correo electrónico"><br>
+        <input type="file" name="miArchivo" id="miArchivo"><br>
+        <input type="hidden" name="miHidden" id="miHidden" value="valor oculto"><br>
+        <input type="image" name="miImagen" id="miImagen" src="Imagenes/logo_itam.png" alt="Enviar"><br>
+        <input type="month" name="miMes" id="miMes"><br>
+        <input type="number" name="miNumero" id="miNumero" placeholder="Número"><br>
+        <input type=password name="miPassword" id="miPassword" placeholder="Contraseña"><br>
+        <input type="radio" name="miRadio" id="miRadio1" value="opcion1"> Opción 1
+        <input type="range" name="miRango" id="miRango" min="0" max="100"><br>
+        <input type="reset" value="Resetear formulario">
+        <input type="search" name="miBusqueda" id="miBusqueda" placeholder="Buscar"><br>
+        <input type="submit" value="Enviar formulario">
+        <input type="tel" name="miTelefono" id="miTelefono" placeholder="Teléfono"><br>
+        <input type="text" name="miTexto" id="miTexto" placeholder="Texto"><br>
+        <input type="time" name="miHora" id="miHora"><br>
+        <input type="url" name="miURL" id="miURL" placeholder="https://www.google.com/"><br>
+        <input type="week" name="miSemana" id="miSemana"><br>
+        <label for="miTexto">Etiqueta para el input de texto</label><br>
+
+        <input type="number" id="b" name="b" value="50" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output><br>
+        <label for="descarga">Descarga:</label>
+        <progress id="descarga" max="100" value="50">50%</progress><br>
+
+        <select name="multiple" id="multiple" multiple>
+            <option value="México">México</option>
+            <option value="Estados Unidos" disabled>Estados Unidos</option>
+            <option value="Canadá">Canadá</option>
+        </select>
+        <select name="tamaño" id="tamaño" size="3">
+            <option value="Rojo" selected>Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+        </select>
+        <select name="deshabilitado" id="deshabilitado" disabled>
+            <option value="Bloqueado">Bloquead</option>
+        </select>
+        <select name="requerido" id="requerido" required>
+            <option value="">Seleccionar una opción</option>
+            <option value="Opción 1">Opción 1</option>
+        </select>
+        <select name="autoenfoque" id="autoenfoque" autofocus>
+            <option value="A">A</option>
+        </select> <br>
+
+        <textarea name="mayusculas" id="mayusculas" autocapitalize="" placeholder="Mayúsculas"></textarea>
+        <textarea name="completar" id="completar" autocomplete="on" placeholder="Autocompletar"></textarea>
+        <textarea name="corrector" id="corrector" autocorrect="on" placeholder="Autocorrector"></textarea>
+        <textarea name="colRows" id="colRows" cols="30" rows="10" dirname="colRows.dir" placeholder="Tamaño y dirección del texto"></textarea>
+        <textarea name="sololeer" id="sololeer" readonly>Este texto no se edita</textarea>
+        <textarea name="chequeo" id="chequeo" placeholder="Autochequeo de la ortografía" spellcheck="true" wrap="soft"></textarea>
+    </form>
+
+</body>
+</html>
