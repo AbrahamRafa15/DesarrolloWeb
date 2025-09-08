@@ -169,7 +169,7 @@
             </div>
             <button id="video" class="redondeado">Desplegar video</button>
         </form>
-        <div class="ContenedorVideo">
+        <div id="ContenedorVideo" class="ContenedorVideo">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ojvz9Ko_FMQ" 
                 title="YouTube video player" frameborder="0" allowfullscreen>
             </iframe>
@@ -178,7 +178,7 @@
         <script>
             document.getElementById("video").addEventListener("click", function(event){
                 event.preventDefault(); 
-                document.getElementById("contenedorVideo").style.display = "block";
+                document.getElementById("ContenedorVideo").style.display = "block";
             });
         </script>
     </main>
