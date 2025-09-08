@@ -8,20 +8,24 @@
 </head>
 <body>
     <header>
-        <h1 id="Biografia">Biografía de Lionel Andrés Messi Cuccittini</h1>
-        <p><b>Nacimiento:</b> Rosario, 24 de junio de 1987</p>
-        <p><b>Profesión:</b> Futbolista</p>
-        <p><b>Equipo actual:</b> Inter de Miami</p>
-        <p><b>Posición:</b> Delantero</p>
-        <p><b>Altura:</b> 1.70m</p>
+        <h1 class="Biografia">Biografía de Lionel Andrés Messi Cuccittini</h1>
+        <p class="parrafos"><b>Nacimiento:</b> Rosario, 24 de junio de 1987</p>
+        <p class="parrafos"><b>Profesión:</b> Futbolista</p>
+        <p class="parrafos"><b>Equipo actual:</b> Inter de Miami</p>
+        <p class="parrafos"><b>Posición:</b> Delantero</p>
+        <p class="parrafos"><b>Altura:</b> 1.70m</p>
     </header>
     <nav>
+        <h3>Enlaces</h3>
         <ul>
             <li><a href="#Origenes">Orígenes y formación</a></li>
             <li><a href="#Trayectoria">Trayectoria profesional</a></li>
             <li><a href="#Seleccion">Selección Argentina</a></li>
             <li><a href="#Titulos">Títulos</a></li>
             <li><a href="#Records">Récords</a></li>
+            <li><a href="#Formulario">Formulario</a></li>
+            <li><a href="https://www.youtube.com/watch?v=FA1sR2SZAlY" target="_blank">Messi gana el mundial</a></li>
+            <li><a href="https://www.youtube.com/watch?v=jrET9OVaCk4" target="_blank">Messi gana su 8vo balón de oro</a></li>
         </ul>
     </nav>
     <main>
@@ -58,7 +62,7 @@
                 </p>
                 <span>
                     <img src="Imagenes/Imagenes De Lionel Messi.jpeg" alt="Imagen de Lionel Messi en 2005 
-                    jugando con el FC Barcelona y corriendo tras un balón" width="150">
+                    jugando con el FC Barcelona y corriendo tras un balón" width="150" class="bordeImgSolido">
                 </span>
             </div>
             <h3>Paris Saint-Germain F.C.</h3>
@@ -74,7 +78,7 @@
                 </p>
                 <span>
                     <img src="Imagenes/MessiPSG.jpg" alt="Imagen de Messi en el PSG preparandose para patear un
-                    tiro libre" width="175">
+                    tiro libre" width="175" class="bordeImgPunteado">
                 </span>
             </div>
             <h3>Inter de Miami</h3>
@@ -91,11 +95,11 @@
                     </p>
                     <span>
                         <img src="Imagenes/MessiInterMiami.png" alt="Imagen de Messi en el Inter de Miami
-                        celebrando un gol" width="300">
+                        celebrando un gol" width="300" class="bordeImgSolido" id="imagenInter">
                     </span>
                 </div>
         </section>
-        <article>
+        <article class="artSeleccion">
             <h2 id="Seleccion">Selección Argentina</h2>
             <div class="fila">
                 <p class="parrafos">
@@ -107,7 +111,8 @@
                     Copa América.
                 </p>
                 <span>
-                    <img src="Imagenes/MessiMundial.webp" alt="Imagen de Messi besando la Copa del Mundo" width="175">
+                    <img src="Imagenes/MessiMundial.webp" alt="Imagen de Messi besando la Copa del Mundo" width="175"
+                    class="bordeImgPunteado">
                 </span>
             </div>
         </article>
@@ -157,14 +162,35 @@
         </ol>
         <hr>
         <h2>Formulario</h2>
-    </main>
+        <form action="" id="Formulario">
+            <div>
+                <label for="boton">Ir a mejores jugadas de Messi:</label>
+                <input type="button" id="boton" class="redondeado" value="Mejores jugadas" onclick="window.open('https://www.youtube.com/watch?v=fpkkDHufE-c', '_blank')">            
+            </div>
+            <button id="video" class="redondeado">Desplegar video</button>
+        </form>
+        <div class="ContenedorVideo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ojvz9Ko_FMQ" 
+                title="YouTube video player" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
 
+        <script>
+            document.getElementById("video").addEventListener("click", function(event){
+                event.preventDefault(); 
+                document.getElementById("contenedorVideo").style.display = "block";
+            });
+        </script>
+    </main>
+    <hr>
     <footer>
         <p class="parrafos2">Creado por Abraham Martínez Cerón</p>
         <p class="parrafos2">Referencias:</p>
         <p class="parrafos2">
-            <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank">Biografía de Lionel Messi</a><br>
-            <a href="https://es.wikipedia.org/wiki/Anexo:R%C3%A9cords_de_Lionel_Messi" target="_blank">Récords de Messi</a>
+            <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank">Biografía de Lionel Messi</a>
+        </p>
+        <p class="parrafos2">
+            <a href="https://es.wikipedia.org/wiki/Anexo:R%C3%A9cords_de_Lionel_Messi" target="_blank">Récords de Messi</a> 
         </p>
     </footer>
 </body>
