@@ -1,12 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
-</head>
-<body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Esta es mi primera página web.</p>
-</body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi primera página online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <h5 class="text-body-emphasis h4">Collapsed content</h5>
+                <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav> 
+    </header>
+    <main class="container">
+        <h1 class="mt-5">Mi primera página online</h1>
+        <div class="row">
+            <div class="col-8 bg-primary">
+                <div class="card" style="width: 18rem;">
+            <img src="https://ajuntament.barcelona.cat/turisme/sites/default/files/2024-11/barcelona_1.jpg" class="card-img-top" alt="Imagen de la ciudad de Barcelona">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+                </div>
+            </div>
+            <div class="col bg-warning">
+                <div class="card" style="width: 18rem;">
+            <img src="https://www.fcbarcelona.com/photo-resources/2025/08/10/59a07623-3129-4e0e-9f10-dfe96520b2d8/_MGA1682.jpg?width=1200&height=525" class="card-img-top" alt="Imagen de la presentación del equipo del FC Barcelona, con Hansi Flick hablando al micrófono">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+                </div>
+            </div>
+            <div class="col bg-danger">
+                <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnNSTq2-Ebq3rnNpyx372sGIKrss2VkKfvCQ&s" class="card-img-top" alt="Imagen del escudo del FC Barcelona">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
