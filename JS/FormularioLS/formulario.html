@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="formulario.js"></script>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form id="formulario" onsubmit="return false;">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required><br><br>
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" required><br><br>
+        <select name="selectSemana" id="diaFavorito">
+            <option value="" disabled selected>Selecciona tu día favorito</option>
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miércoles">Miércoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sábado">Sábado</option>
+            <option value="Domingo">Domingo</option>
+        </select>
+    </form> 
+    <br>
+    <button onclick="guardarDatos()">Guardar Datos</button>
+    <h2 id="textoFinal">
+        Esperando datos...
+    </h2>
+</body>
+</html>
